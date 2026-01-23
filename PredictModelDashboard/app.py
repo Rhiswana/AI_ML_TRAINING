@@ -137,7 +137,7 @@ st.subheader("📊 Feature Importance (SHAP)")
 try:
     plot_model(final_model, plot="shap", display_format="streamlit")
 except:
-    st.info("SHAP explanation not available")
+    st.info("SHAP explanation not availablee")
 
 
 
