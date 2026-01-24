@@ -141,7 +141,7 @@ except:
 
 
 
-st.subheader(f"📉 {target_col} Distribution")
+st.subheader(f"📉 {target_col} Distribution ")
 fig, ax = plt.subplots()
 ax.hist(data[target_col], bins=30)
 ax.axvline(predicted_value, color='red', linestyle='--', label='Prediction')
