@@ -1,0 +1,39 @@
+| Row | Temp | Press | Vib |                      |
+| --- | ---- | ----- | --- | -------------------- |
+| 1   | 25   | 30    | 8   |                      |
+| 2   | 26   | 32    | 9   |                      |
+| 3   | 27   | 31    | 10  |                      |
+| 4   | 120  | 85    | 30  | ← anomaly (far away) |
+
+
+                      [All Rows: 1,2,3,4]
+                               |
+                               v
+                    Random Feature → Temp
+                    Random Split → 100
+              -------------------------------
+             |                               |
+   Temp < 100 (Rows 1,2,3)           Temp >= 100 (Row 4)
+             |                               |
+             v                               v
+   Random Feature → Vib                Row 4 isolated!
+   Random Split → 9                       Path length = 1
+       |
+       v
+Row 1,2,3 continue splitting until isolated
+  Row 1 → Path=2
+  Row 2 → Path=2
+  Row 3 → Path=2
+
+After building MANY trees (forest):
+Average Path Lengths:
+Row 1 → 3.5 (Normal)
+Row 2 → 3.4 (Normal)
+Row 3 → 3.6 (Normal)
+Row 4 → 1.0 (Anomaly, isolated immediately)
+
+Apply Threshold:
+Row 1 → 0 (Normal)
+Row 2 → 0 (Normal)
+Row 3 → 0 (Normal)
+Row 4 → 1 (Anomaly)

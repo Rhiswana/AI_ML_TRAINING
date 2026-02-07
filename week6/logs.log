@@ -1,0 +1,2160 @@
+2026-02-03 08:33:49,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:33:49,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:33:49,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:33:49,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:34:04,503:INFO:PyCaret AnomalyExperiment
+2026-02-03 08:34:04,503:INFO:Logging name: anomaly-default-name
+2026-02-03 08:34:04,503:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-03 08:34:04,504:INFO:version 3.3.2
+2026-02-03 08:34:04,504:INFO:Initializing setup()
+2026-02-03 08:34:04,504:INFO:self.USI: 024a
+2026-02-03 08:34:04,504:INFO:self._variable_keys: {'USI', 'exp_id', 'memory', '_ml_usecase', 'log_plots_param', 'logging_param', 'X', 'gpu_n_jobs_param', 'pipeline', 'gpu_param', '_available_plots', 'data', 'seed', 'html_param', 'n_jobs_param', 'exp_name_log', 'idx'}
+2026-02-03 08:34:04,504:INFO:Checking environment
+2026-02-03 08:34:04,504:INFO:python_version: 3.10.11
+2026-02-03 08:34:04,504:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-03 08:34:04,504:INFO:machine: AMD64
+2026-02-03 08:34:04,539:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-03 08:34:04,539:INFO:Memory: svmem(total=16540737536, available=6109945856, percent=63.1, used=10430791680, free=6109945856)
+2026-02-03 08:34:04,539:INFO:Physical Core: 8
+2026-02-03 08:34:04,540:INFO:Logical Core: 16
+2026-02-03 08:34:04,540:INFO:Checking libraries
+2026-02-03 08:34:04,540:INFO:System:
+2026-02-03 08:34:04,540:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-03 08:34:04,540:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-03 08:34:04,540:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-03 08:34:04,540:INFO:PyCaret required dependencies:
+2026-02-03 08:34:04,540:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-03 08:34:05,433:INFO:                 pip: 25.3
+2026-02-03 08:34:05,433:INFO:          setuptools: 65.5.0
+2026-02-03 08:34:05,433:INFO:             pycaret: 3.3.2
+2026-02-03 08:34:05,433:INFO:             IPython: 8.38.0
+2026-02-03 08:34:05,433:INFO:          ipywidgets: 8.1.8
+2026-02-03 08:34:05,433:INFO:                tqdm: 4.67.1
+2026-02-03 08:34:05,433:INFO:               numpy: 1.26.4
+2026-02-03 08:34:05,433:INFO:              pandas: 2.1.4
+2026-02-03 08:34:05,433:INFO:              jinja2: 3.1.6
+2026-02-03 08:34:05,433:INFO:               scipy: 1.11.4
+2026-02-03 08:34:05,433:INFO:              joblib: 1.3.2
+2026-02-03 08:34:05,433:INFO:             sklearn: 1.4.2
+2026-02-03 08:34:05,434:INFO:                pyod: 2.0.6
+2026-02-03 08:34:05,434:INFO:            imblearn: 0.14.1
+2026-02-03 08:34:05,434:INFO:   category_encoders: 2.7.0
+2026-02-03 08:34:05,434:INFO:            lightgbm: 4.6.0
+2026-02-03 08:34:05,434:INFO:               numba: 0.63.1
+2026-02-03 08:34:05,434:INFO:            requests: 2.32.5
+2026-02-03 08:34:05,434:INFO:          matplotlib: 3.7.5
+2026-02-03 08:34:05,434:INFO:          scikitplot: 0.3.7
+2026-02-03 08:34:05,434:INFO:         yellowbrick: 1.5
+2026-02-03 08:34:05,434:INFO:              plotly: 6.5.1
+2026-02-03 08:34:05,434:INFO:    plotly-resampler: Not installed
+2026-02-03 08:34:05,434:INFO:             kaleido: 1.2.0
+2026-02-03 08:34:05,434:INFO:           schemdraw: 0.15
+2026-02-03 08:34:05,434:INFO:         statsmodels: 0.14.6
+2026-02-03 08:34:05,435:INFO:              sktime: 0.26.0
+2026-02-03 08:34:05,435:INFO:               tbats: 1.1.3
+2026-02-03 08:34:05,435:INFO:            pmdarima: 2.0.4
+2026-02-03 08:34:05,435:INFO:              psutil: 7.2.1
+2026-02-03 08:34:05,435:INFO:          markupsafe: 3.0.3
+2026-02-03 08:34:05,435:INFO:             pickle5: Not installed
+2026-02-03 08:34:05,435:INFO:         cloudpickle: 3.1.2
+2026-02-03 08:34:05,435:INFO:         deprecation: 2.1.0
+2026-02-03 08:34:05,435:INFO:              xxhash: 3.6.0
+2026-02-03 08:34:05,435:INFO:           wurlitzer: Not installed
+2026-02-03 08:34:05,435:INFO:PyCaret optional dependencies:
+2026-02-03 08:34:05,470:INFO:                shap: Not installed
+2026-02-03 08:34:05,470:INFO:           interpret: Not installed
+2026-02-03 08:34:05,471:INFO:                umap: Not installed
+2026-02-03 08:34:05,471:INFO:     ydata_profiling: Not installed
+2026-02-03 08:34:05,471:INFO:  explainerdashboard: Not installed
+2026-02-03 08:34:05,471:INFO:             autoviz: Not installed
+2026-02-03 08:34:05,471:INFO:           fairlearn: Not installed
+2026-02-03 08:34:05,471:INFO:          deepchecks: Not installed
+2026-02-03 08:34:05,471:INFO:             xgboost: Not installed
+2026-02-03 08:34:05,471:INFO:            catboost: Not installed
+2026-02-03 08:34:05,471:INFO:              kmodes: Not installed
+2026-02-03 08:34:05,471:INFO:             mlxtend: Not installed
+2026-02-03 08:34:05,471:INFO:       statsforecast: Not installed
+2026-02-03 08:34:05,471:INFO:        tune_sklearn: Not installed
+2026-02-03 08:34:05,471:INFO:                 ray: Not installed
+2026-02-03 08:34:05,471:INFO:            hyperopt: Not installed
+2026-02-03 08:34:05,471:INFO:              optuna: Not installed
+2026-02-03 08:34:05,471:INFO:               skopt: Not installed
+2026-02-03 08:34:05,471:INFO:              mlflow: Not installed
+2026-02-03 08:34:05,471:INFO:              gradio: Not installed
+2026-02-03 08:34:05,471:INFO:             fastapi: Not installed
+2026-02-03 08:34:05,471:INFO:             uvicorn: Not installed
+2026-02-03 08:34:05,472:INFO:              m2cgen: Not installed
+2026-02-03 08:34:05,472:INFO:           evidently: Not installed
+2026-02-03 08:34:05,472:INFO:               fugue: Not installed
+2026-02-03 08:34:05,472:INFO:           streamlit: 1.52.2
+2026-02-03 08:34:05,472:INFO:             prophet: Not installed
+2026-02-03 08:34:05,472:INFO:None
+2026-02-03 08:34:05,472:INFO:Set up data.
+2026-02-03 08:34:05,479:INFO:Set up index.
+2026-02-03 08:34:05,479:INFO:Assigning column types.
+2026-02-03 08:34:05,486:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-03 08:34:22,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:34:22,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:34:22,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:34:22,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 08:34:24,167:INFO:PyCaret AnomalyExperiment
+2026-02-03 08:34:24,168:INFO:Logging name: anomaly-default-name
+2026-02-03 08:34:24,168:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-03 08:34:24,168:INFO:version 3.3.2
+2026-02-03 08:34:24,168:INFO:Initializing setup()
+2026-02-03 08:34:24,168:INFO:self.USI: bee1
+2026-02-03 08:34:24,168:INFO:self._variable_keys: {'data', 'exp_name_log', 'gpu_param', 'USI', '_available_plots', 'exp_id', 'logging_param', 'gpu_n_jobs_param', 'seed', 'n_jobs_param', 'X', 'pipeline', 'html_param', '_ml_usecase', 'memory', 'idx', 'log_plots_param'}
+2026-02-03 08:34:24,168:INFO:Checking environment
+2026-02-03 08:34:24,168:INFO:python_version: 3.10.11
+2026-02-03 08:34:24,168:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-03 08:34:24,168:INFO:machine: AMD64
+2026-02-03 08:34:24,198:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-03 08:34:24,198:INFO:Memory: svmem(total=16540737536, available=6058909696, percent=63.4, used=10481827840, free=6058909696)
+2026-02-03 08:34:24,199:INFO:Physical Core: 8
+2026-02-03 08:34:24,199:INFO:Logical Core: 16
+2026-02-03 08:34:24,199:INFO:Checking libraries
+2026-02-03 08:34:24,199:INFO:System:
+2026-02-03 08:34:24,199:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-03 08:34:24,199:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-03 08:34:24,199:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-03 08:34:24,199:INFO:PyCaret required dependencies:
+2026-02-03 08:34:24,199:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-03 08:34:24,245:INFO:                 pip: 25.3
+2026-02-03 08:34:24,245:INFO:          setuptools: 65.5.0
+2026-02-03 08:34:24,245:INFO:             pycaret: 3.3.2
+2026-02-03 08:34:24,246:INFO:             IPython: 8.38.0
+2026-02-03 08:34:24,246:INFO:          ipywidgets: 8.1.8
+2026-02-03 08:34:24,246:INFO:                tqdm: 4.67.1
+2026-02-03 08:34:24,246:INFO:               numpy: 1.26.4
+2026-02-03 08:34:24,246:INFO:              pandas: 2.1.4
+2026-02-03 08:34:24,246:INFO:              jinja2: 3.1.6
+2026-02-03 08:34:24,246:INFO:               scipy: 1.11.4
+2026-02-03 08:34:24,246:INFO:              joblib: 1.3.2
+2026-02-03 08:34:24,246:INFO:             sklearn: 1.4.2
+2026-02-03 08:34:24,246:INFO:                pyod: 2.0.6
+2026-02-03 08:34:24,246:INFO:            imblearn: 0.14.1
+2026-02-03 08:34:24,246:INFO:   category_encoders: 2.7.0
+2026-02-03 08:34:24,247:INFO:            lightgbm: 4.6.0
+2026-02-03 08:34:24,247:INFO:               numba: 0.63.1
+2026-02-03 08:34:24,247:INFO:            requests: 2.32.5
+2026-02-03 08:34:24,247:INFO:          matplotlib: 3.7.5
+2026-02-03 08:34:24,247:INFO:          scikitplot: 0.3.7
+2026-02-03 08:34:24,247:INFO:         yellowbrick: 1.5
+2026-02-03 08:34:24,247:INFO:              plotly: 6.5.1
+2026-02-03 08:34:24,247:INFO:    plotly-resampler: Not installed
+2026-02-03 08:34:24,247:INFO:             kaleido: 1.2.0
+2026-02-03 08:34:24,247:INFO:           schemdraw: 0.15
+2026-02-03 08:34:24,247:INFO:         statsmodels: 0.14.6
+2026-02-03 08:34:24,247:INFO:              sktime: 0.26.0
+2026-02-03 08:34:24,247:INFO:               tbats: 1.1.3
+2026-02-03 08:34:24,248:INFO:            pmdarima: 2.0.4
+2026-02-03 08:34:24,248:INFO:              psutil: 7.2.1
+2026-02-03 08:34:24,248:INFO:          markupsafe: 3.0.3
+2026-02-03 08:34:24,248:INFO:             pickle5: Not installed
+2026-02-03 08:34:24,248:INFO:         cloudpickle: 3.1.2
+2026-02-03 08:34:24,248:INFO:         deprecation: 2.1.0
+2026-02-03 08:34:24,248:INFO:              xxhash: 3.6.0
+2026-02-03 08:34:24,248:INFO:           wurlitzer: Not installed
+2026-02-03 08:34:24,248:INFO:PyCaret optional dependencies:
+2026-02-03 08:34:24,287:INFO:                shap: Not installed
+2026-02-03 08:34:24,287:INFO:           interpret: Not installed
+2026-02-03 08:34:24,287:INFO:                umap: Not installed
+2026-02-03 08:34:24,287:INFO:     ydata_profiling: Not installed
+2026-02-03 08:34:24,288:INFO:  explainerdashboard: Not installed
+2026-02-03 08:34:24,288:INFO:             autoviz: Not installed
+2026-02-03 08:34:24,288:INFO:           fairlearn: Not installed
+2026-02-03 08:34:24,288:INFO:          deepchecks: Not installed
+2026-02-03 08:34:24,288:INFO:             xgboost: Not installed
+2026-02-03 08:34:24,288:INFO:            catboost: Not installed
+2026-02-03 08:34:24,289:INFO:              kmodes: Not installed
+2026-02-03 08:34:24,289:INFO:             mlxtend: Not installed
+2026-02-03 08:34:24,289:INFO:       statsforecast: Not installed
+2026-02-03 08:34:24,289:INFO:        tune_sklearn: Not installed
+2026-02-03 08:34:24,289:INFO:                 ray: Not installed
+2026-02-03 08:34:24,289:INFO:            hyperopt: Not installed
+2026-02-03 08:34:24,289:INFO:              optuna: Not installed
+2026-02-03 08:34:24,289:INFO:               skopt: Not installed
+2026-02-03 08:34:24,289:INFO:              mlflow: Not installed
+2026-02-03 08:34:24,289:INFO:              gradio: Not installed
+2026-02-03 08:34:24,290:INFO:             fastapi: Not installed
+2026-02-03 08:34:24,290:INFO:             uvicorn: Not installed
+2026-02-03 08:34:24,290:INFO:              m2cgen: Not installed
+2026-02-03 08:34:24,290:INFO:           evidently: Not installed
+2026-02-03 08:34:24,290:INFO:               fugue: Not installed
+2026-02-03 08:34:24,290:INFO:           streamlit: 1.52.2
+2026-02-03 08:34:24,290:INFO:             prophet: Not installed
+2026-02-03 08:34:24,290:INFO:None
+2026-02-03 08:34:24,290:INFO:Set up data.
+2026-02-03 08:34:24,294:INFO:Set up index.
+2026-02-03 08:34:24,294:INFO:Assigning column types.
+2026-02-03 08:34:24,299:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-03 08:34:26,341:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-03 08:34:26,345:INFO:Preparing preprocessing pipeline...
+2026-02-03 08:34:26,345:INFO:Set up simple imputation.
+2026-02-03 08:34:26,345:INFO:Set up feature normalization.
+2026-02-03 08:34:26,380:INFO:Finished creating preprocessing pipeline.
+2026-02-03 08:34:26,390:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-03 08:34:26,390:INFO:Creating final display dataframe.
+2026-02-03 08:34:26,425:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  bee1
+2026-02-03 08:34:26,433:INFO:setup() successfully completed in 2.27s...............
+2026-02-03 08:34:26,433:INFO:Initializing create_model()
+2026-02-03 08:34:26,433:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000202B64B3F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-03 08:34:26,434:INFO:Checking exceptions
+2026-02-03 08:34:26,469:INFO:Importing untrained model
+2026-02-03 08:34:26,470:INFO:Isolation Forest Imported successfully
+2026-02-03 08:34:26,471:INFO:Fitting Model
+2026-02-03 08:34:26,854:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-03 08:34:26,854:INFO:create_models() successfully completed......................................
+2026-02-03 08:34:26,855:INFO:Uploading results into container
+2026-02-03 08:34:26,855:INFO:Uploading model into container now
+2026-02-03 08:34:26,855:INFO:_master_model_container: 1
+2026-02-03 08:34:26,855:INFO:_display_container: 1
+2026-02-03 08:34:26,855:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-03 08:34:26,855:INFO:create_model() successfully completed......................................
+2026-02-03 08:34:26,991:INFO:Initializing assign_model()
+2026-02-03 08:34:26,991:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000202B64B3F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-03 08:34:26,991:INFO:Checking exceptions
+2026-02-03 08:34:26,991:INFO:Determining Trained Model
+2026-02-03 08:34:26,991:INFO:Trained Model : Isolation Forest
+2026-02-03 08:34:26,991:INFO:Copying data
+2026-02-03 08:34:26,991:INFO:(300, 5)
+2026-02-03 08:34:26,991:INFO:assign_model() successfully completed......................................
+2026-02-03 08:34:27,007:INFO:Initializing save_model()
+2026-02-03 08:34:27,007:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-03 08:34:27,007:INFO:Adding model into prep_pipe
+2026-02-03 08:34:27,096:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-03 08:34:27,117:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-03 08:34:27,117:INFO:save_model() successfully completed......................................
+2026-02-03 08:34:27,255:INFO:Initializing load_model()
+2026-02-03 08:34:27,255:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-03 08:34:27,374:INFO:Initializing predict_model()
+2026-02-03 08:34:27,374:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000202B64B3F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-03 08:34:27,374:INFO:Set up data.
+2026-02-03 08:34:27,495:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-03 08:34:27,618:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-03 10:23:20,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 10:23:20,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 10:23:20,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 10:23:20,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-03 10:23:21,044:INFO:PyCaret AnomalyExperiment
+2026-02-03 10:23:21,044:INFO:Logging name: anomaly-default-name
+2026-02-03 10:23:21,044:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-03 10:23:21,044:INFO:version 3.3.2
+2026-02-03 10:23:21,044:INFO:Initializing setup()
+2026-02-03 10:23:21,044:INFO:self.USI: af20
+2026-02-03 10:23:21,045:INFO:self._variable_keys: {'memory', 'n_jobs_param', 'logging_param', 'USI', 'data', 'html_param', 'X', 'exp_name_log', '_available_plots', 'seed', 'exp_id', 'gpu_n_jobs_param', 'pipeline', 'log_plots_param', 'gpu_param', 'idx', '_ml_usecase'}
+2026-02-03 10:23:21,045:INFO:Checking environment
+2026-02-03 10:23:21,045:INFO:python_version: 3.10.11
+2026-02-03 10:23:21,045:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-03 10:23:21,045:INFO:machine: AMD64
+2026-02-03 10:23:21,060:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-03 10:23:21,060:INFO:Memory: svmem(total=16540737536, available=6070226944, percent=63.3, used=10470510592, free=6070226944)
+2026-02-03 10:23:21,060:INFO:Physical Core: 8
+2026-02-03 10:23:21,060:INFO:Logical Core: 16
+2026-02-03 10:23:21,060:INFO:Checking libraries
+2026-02-03 10:23:21,060:INFO:System:
+2026-02-03 10:23:21,060:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-03 10:23:21,061:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-03 10:23:21,061:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-03 10:23:21,061:INFO:PyCaret required dependencies:
+2026-02-03 10:23:21,061:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-03 10:23:21,087:INFO:                 pip: 25.3
+2026-02-03 10:23:21,088:INFO:          setuptools: 65.5.0
+2026-02-03 10:23:21,088:INFO:             pycaret: 3.3.2
+2026-02-03 10:23:21,088:INFO:             IPython: 8.38.0
+2026-02-03 10:23:21,088:INFO:          ipywidgets: 8.1.8
+2026-02-03 10:23:21,088:INFO:                tqdm: 4.67.1
+2026-02-03 10:23:21,088:INFO:               numpy: 1.26.4
+2026-02-03 10:23:21,088:INFO:              pandas: 2.1.4
+2026-02-03 10:23:21,088:INFO:              jinja2: 3.1.6
+2026-02-03 10:23:21,088:INFO:               scipy: 1.11.4
+2026-02-03 10:23:21,088:INFO:              joblib: 1.3.2
+2026-02-03 10:23:21,088:INFO:             sklearn: 1.4.2
+2026-02-03 10:23:21,088:INFO:                pyod: 2.0.6
+2026-02-03 10:23:21,088:INFO:            imblearn: 0.14.1
+2026-02-03 10:23:21,088:INFO:   category_encoders: 2.7.0
+2026-02-03 10:23:21,088:INFO:            lightgbm: 4.6.0
+2026-02-03 10:23:21,088:INFO:               numba: 0.63.1
+2026-02-03 10:23:21,088:INFO:            requests: 2.32.5
+2026-02-03 10:23:21,088:INFO:          matplotlib: 3.7.5
+2026-02-03 10:23:21,088:INFO:          scikitplot: 0.3.7
+2026-02-03 10:23:21,088:INFO:         yellowbrick: 1.5
+2026-02-03 10:23:21,088:INFO:              plotly: 6.5.1
+2026-02-03 10:23:21,088:INFO:    plotly-resampler: Not installed
+2026-02-03 10:23:21,088:INFO:             kaleido: 1.2.0
+2026-02-03 10:23:21,088:INFO:           schemdraw: 0.15
+2026-02-03 10:23:21,089:INFO:         statsmodels: 0.14.6
+2026-02-03 10:23:21,089:INFO:              sktime: 0.26.0
+2026-02-03 10:23:21,089:INFO:               tbats: 1.1.3
+2026-02-03 10:23:21,089:INFO:            pmdarima: 2.0.4
+2026-02-03 10:23:21,089:INFO:              psutil: 7.2.1
+2026-02-03 10:23:21,089:INFO:          markupsafe: 3.0.3
+2026-02-03 10:23:21,089:INFO:             pickle5: Not installed
+2026-02-03 10:23:21,089:INFO:         cloudpickle: 3.1.2
+2026-02-03 10:23:21,089:INFO:         deprecation: 2.1.0
+2026-02-03 10:23:21,089:INFO:              xxhash: 3.6.0
+2026-02-03 10:23:21,089:INFO:           wurlitzer: Not installed
+2026-02-03 10:23:21,089:INFO:PyCaret optional dependencies:
+2026-02-03 10:23:21,106:INFO:                shap: Not installed
+2026-02-03 10:23:21,106:INFO:           interpret: Not installed
+2026-02-03 10:23:21,106:INFO:                umap: Not installed
+2026-02-03 10:23:21,106:INFO:     ydata_profiling: Not installed
+2026-02-03 10:23:21,106:INFO:  explainerdashboard: Not installed
+2026-02-03 10:23:21,106:INFO:             autoviz: Not installed
+2026-02-03 10:23:21,106:INFO:           fairlearn: Not installed
+2026-02-03 10:23:21,106:INFO:          deepchecks: Not installed
+2026-02-03 10:23:21,106:INFO:             xgboost: Not installed
+2026-02-03 10:23:21,106:INFO:            catboost: Not installed
+2026-02-03 10:23:21,106:INFO:              kmodes: Not installed
+2026-02-03 10:23:21,106:INFO:             mlxtend: Not installed
+2026-02-03 10:23:21,106:INFO:       statsforecast: Not installed
+2026-02-03 10:23:21,106:INFO:        tune_sklearn: Not installed
+2026-02-03 10:23:21,106:INFO:                 ray: Not installed
+2026-02-03 10:23:21,107:INFO:            hyperopt: Not installed
+2026-02-03 10:23:21,107:INFO:              optuna: Not installed
+2026-02-03 10:23:21,107:INFO:               skopt: Not installed
+2026-02-03 10:23:21,107:INFO:              mlflow: Not installed
+2026-02-03 10:23:21,107:INFO:              gradio: Not installed
+2026-02-03 10:23:21,107:INFO:             fastapi: Not installed
+2026-02-03 10:23:21,107:INFO:             uvicorn: Not installed
+2026-02-03 10:23:21,107:INFO:              m2cgen: Not installed
+2026-02-03 10:23:21,107:INFO:           evidently: Not installed
+2026-02-03 10:23:21,107:INFO:               fugue: Not installed
+2026-02-03 10:23:21,107:INFO:           streamlit: 1.52.2
+2026-02-03 10:23:21,107:INFO:             prophet: Not installed
+2026-02-03 10:23:21,107:INFO:None
+2026-02-03 10:23:21,107:INFO:Set up data.
+2026-02-03 10:23:21,109:INFO:Set up index.
+2026-02-03 10:23:21,109:INFO:Assigning column types.
+2026-02-03 10:23:21,111:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-03 10:23:21,394:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-03 10:23:21,396:INFO:Preparing preprocessing pipeline...
+2026-02-03 10:23:21,396:INFO:Set up simple imputation.
+2026-02-03 10:23:21,396:INFO:Set up feature normalization.
+2026-02-03 10:23:21,408:INFO:Finished creating preprocessing pipeline.
+2026-02-03 10:23:21,412:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-03 10:23:21,412:INFO:Creating final display dataframe.
+2026-02-03 10:23:21,424:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  af20
+2026-02-03 10:23:21,427:INFO:setup() successfully completed in 0.39s...............
+2026-02-03 10:23:21,427:INFO:Initializing create_model()
+2026-02-03 10:23:21,427:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000019C3E4A3F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-03 10:23:21,427:INFO:Checking exceptions
+2026-02-03 10:23:21,438:INFO:Importing untrained model
+2026-02-03 10:23:21,439:INFO:Isolation Forest Imported successfully
+2026-02-03 10:23:21,439:INFO:Fitting Model
+2026-02-03 10:23:21,560:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-03 10:23:21,560:INFO:create_models() successfully completed......................................
+2026-02-03 10:23:21,560:INFO:Uploading results into container
+2026-02-03 10:23:21,560:INFO:Uploading model into container now
+2026-02-03 10:23:21,561:INFO:_master_model_container: 1
+2026-02-03 10:23:21,561:INFO:_display_container: 1
+2026-02-03 10:23:21,561:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-03 10:23:21,561:INFO:create_model() successfully completed......................................
+2026-02-03 10:23:21,661:INFO:Initializing assign_model()
+2026-02-03 10:23:21,661:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000019C3E4A3F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-03 10:23:21,662:INFO:Checking exceptions
+2026-02-03 10:23:21,662:INFO:Determining Trained Model
+2026-02-03 10:23:21,662:INFO:Trained Model : Isolation Forest
+2026-02-03 10:23:21,662:INFO:Copying data
+2026-02-03 10:23:21,663:INFO:(300, 5)
+2026-02-03 10:23:21,663:INFO:assign_model() successfully completed......................................
+2026-02-03 10:23:21,669:INFO:Initializing save_model()
+2026-02-03 10:23:21,669:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-03 10:23:21,669:INFO:Adding model into prep_pipe
+2026-02-03 10:23:21,706:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-03 10:23:21,709:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-03 10:23:21,709:INFO:save_model() successfully completed......................................
+2026-02-03 10:23:21,804:INFO:Initializing load_model()
+2026-02-03 10:23:21,804:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-03 10:23:21,835:INFO:Initializing predict_model()
+2026-02-03 10:23:21,835:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000019C3E4A3F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-03 10:23:21,835:INFO:Set up data.
+2026-02-03 10:23:21,879:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-03 10:23:21,926:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:02:35,779:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:02:35,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:02:35,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:02:35,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:02:36,790:INFO:PyCaret AnomalyExperiment
+2026-02-04 11:02:36,790:INFO:Logging name: anomaly-default-name
+2026-02-04 11:02:36,790:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-04 11:02:36,790:INFO:version 3.3.2
+2026-02-04 11:02:36,790:INFO:Initializing setup()
+2026-02-04 11:02:36,790:INFO:self.USI: af0d
+2026-02-04 11:02:36,790:INFO:self._variable_keys: {'memory', 'idx', 'USI', 'exp_id', 'gpu_param', 'data', 'log_plots_param', 'html_param', 'exp_name_log', 'X', 'logging_param', '_ml_usecase', 'seed', 'gpu_n_jobs_param', '_available_plots', 'n_jobs_param', 'pipeline'}
+2026-02-04 11:02:36,790:INFO:Checking environment
+2026-02-04 11:02:36,790:INFO:python_version: 3.10.11
+2026-02-04 11:02:36,790:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-04 11:02:36,790:INFO:machine: AMD64
+2026-02-04 11:02:36,803:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-04 11:02:36,803:INFO:Memory: svmem(total=16540737536, available=5851869184, percent=64.6, used=10688868352, free=5851869184)
+2026-02-04 11:02:36,803:INFO:Physical Core: 8
+2026-02-04 11:02:36,803:INFO:Logical Core: 16
+2026-02-04 11:02:36,803:INFO:Checking libraries
+2026-02-04 11:02:36,803:INFO:System:
+2026-02-04 11:02:36,803:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-04 11:02:36,803:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-04 11:02:36,803:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-04 11:02:36,803:INFO:PyCaret required dependencies:
+2026-02-04 11:02:36,803:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-04 11:02:36,833:INFO:                 pip: 25.3
+2026-02-04 11:02:36,833:INFO:          setuptools: 65.5.0
+2026-02-04 11:02:36,833:INFO:             pycaret: 3.3.2
+2026-02-04 11:02:36,833:INFO:             IPython: 8.38.0
+2026-02-04 11:02:36,833:INFO:          ipywidgets: 8.1.8
+2026-02-04 11:02:36,833:INFO:                tqdm: 4.67.1
+2026-02-04 11:02:36,833:INFO:               numpy: 1.26.4
+2026-02-04 11:02:36,833:INFO:              pandas: 2.1.4
+2026-02-04 11:02:36,833:INFO:              jinja2: 3.1.6
+2026-02-04 11:02:36,833:INFO:               scipy: 1.11.4
+2026-02-04 11:02:36,833:INFO:              joblib: 1.3.2
+2026-02-04 11:02:36,833:INFO:             sklearn: 1.4.2
+2026-02-04 11:02:36,833:INFO:                pyod: 2.0.6
+2026-02-04 11:02:36,833:INFO:            imblearn: 0.14.1
+2026-02-04 11:02:36,833:INFO:   category_encoders: 2.7.0
+2026-02-04 11:02:36,833:INFO:            lightgbm: 4.6.0
+2026-02-04 11:02:36,833:INFO:               numba: 0.63.1
+2026-02-04 11:02:36,833:INFO:            requests: 2.32.5
+2026-02-04 11:02:36,833:INFO:          matplotlib: 3.7.5
+2026-02-04 11:02:36,833:INFO:          scikitplot: 0.3.7
+2026-02-04 11:02:36,833:INFO:         yellowbrick: 1.5
+2026-02-04 11:02:36,833:INFO:              plotly: 6.5.1
+2026-02-04 11:02:36,833:INFO:    plotly-resampler: Not installed
+2026-02-04 11:02:36,833:INFO:             kaleido: 1.2.0
+2026-02-04 11:02:36,833:INFO:           schemdraw: 0.15
+2026-02-04 11:02:36,833:INFO:         statsmodels: 0.14.6
+2026-02-04 11:02:36,833:INFO:              sktime: 0.26.0
+2026-02-04 11:02:36,833:INFO:               tbats: 1.1.3
+2026-02-04 11:02:36,833:INFO:            pmdarima: 2.0.4
+2026-02-04 11:02:36,833:INFO:              psutil: 7.2.1
+2026-02-04 11:02:36,833:INFO:          markupsafe: 3.0.3
+2026-02-04 11:02:36,833:INFO:             pickle5: Not installed
+2026-02-04 11:02:36,833:INFO:         cloudpickle: 3.1.2
+2026-02-04 11:02:36,833:INFO:         deprecation: 2.1.0
+2026-02-04 11:02:36,833:INFO:              xxhash: 3.6.0
+2026-02-04 11:02:36,833:INFO:           wurlitzer: Not installed
+2026-02-04 11:02:36,833:INFO:PyCaret optional dependencies:
+2026-02-04 11:02:36,848:INFO:                shap: Not installed
+2026-02-04 11:02:36,848:INFO:           interpret: Not installed
+2026-02-04 11:02:36,848:INFO:                umap: Not installed
+2026-02-04 11:02:36,848:INFO:     ydata_profiling: Not installed
+2026-02-04 11:02:36,848:INFO:  explainerdashboard: Not installed
+2026-02-04 11:02:36,848:INFO:             autoviz: Not installed
+2026-02-04 11:02:36,848:INFO:           fairlearn: Not installed
+2026-02-04 11:02:36,848:INFO:          deepchecks: Not installed
+2026-02-04 11:02:36,848:INFO:             xgboost: Not installed
+2026-02-04 11:02:36,848:INFO:            catboost: Not installed
+2026-02-04 11:02:36,848:INFO:              kmodes: Not installed
+2026-02-04 11:02:36,848:INFO:             mlxtend: Not installed
+2026-02-04 11:02:36,848:INFO:       statsforecast: Not installed
+2026-02-04 11:02:36,848:INFO:        tune_sklearn: Not installed
+2026-02-04 11:02:36,848:INFO:                 ray: Not installed
+2026-02-04 11:02:36,848:INFO:            hyperopt: Not installed
+2026-02-04 11:02:36,848:INFO:              optuna: Not installed
+2026-02-04 11:02:36,848:INFO:               skopt: Not installed
+2026-02-04 11:02:36,848:INFO:              mlflow: Not installed
+2026-02-04 11:02:36,848:INFO:              gradio: Not installed
+2026-02-04 11:02:36,848:INFO:             fastapi: Not installed
+2026-02-04 11:02:36,848:INFO:             uvicorn: Not installed
+2026-02-04 11:02:36,848:INFO:              m2cgen: Not installed
+2026-02-04 11:02:36,848:INFO:           evidently: Not installed
+2026-02-04 11:02:36,848:INFO:               fugue: Not installed
+2026-02-04 11:02:36,848:INFO:           streamlit: 1.52.2
+2026-02-04 11:02:36,848:INFO:             prophet: Not installed
+2026-02-04 11:02:36,848:INFO:None
+2026-02-04 11:02:36,848:INFO:Set up data.
+2026-02-04 11:02:36,848:INFO:Set up index.
+2026-02-04 11:02:36,848:INFO:Assigning column types.
+2026-02-04 11:02:36,848:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-04 11:02:37,436:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-04 11:02:37,436:INFO:Preparing preprocessing pipeline...
+2026-02-04 11:02:37,436:INFO:Set up simple imputation.
+2026-02-04 11:02:37,436:INFO:Set up feature normalization.
+2026-02-04 11:02:37,455:INFO:Finished creating preprocessing pipeline.
+2026-02-04 11:02:37,462:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-04 11:02:37,462:INFO:Creating final display dataframe.
+2026-02-04 11:02:37,483:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  af0d
+2026-02-04 11:02:37,485:INFO:setup() successfully completed in 0.7s...............
+2026-02-04 11:02:37,485:INFO:Initializing create_model()
+2026-02-04 11:02:37,485:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000021A71B43F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-04 11:02:37,485:INFO:Checking exceptions
+2026-02-04 11:02:37,502:INFO:Importing untrained model
+2026-02-04 11:02:37,502:INFO:Isolation Forest Imported successfully
+2026-02-04 11:02:37,503:INFO:Fitting Model
+2026-02-04 11:02:37,668:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:02:37,668:INFO:create_models() successfully completed......................................
+2026-02-04 11:02:37,668:INFO:Uploading results into container
+2026-02-04 11:02:37,668:INFO:Uploading model into container now
+2026-02-04 11:02:37,668:INFO:_master_model_container: 1
+2026-02-04 11:02:37,668:INFO:_display_container: 1
+2026-02-04 11:02:37,668:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:02:37,668:INFO:create_model() successfully completed......................................
+2026-02-04 11:02:37,784:INFO:Initializing assign_model()
+2026-02-04 11:02:37,784:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000021A71B43F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-04 11:02:37,784:INFO:Checking exceptions
+2026-02-04 11:02:37,784:INFO:Determining Trained Model
+2026-02-04 11:02:37,784:INFO:Trained Model : Isolation Forest
+2026-02-04 11:02:37,784:INFO:Copying data
+2026-02-04 11:02:37,784:INFO:(300, 5)
+2026-02-04 11:02:37,784:INFO:assign_model() successfully completed......................................
+2026-02-04 11:02:37,784:INFO:Initializing save_model()
+2026-02-04 11:02:37,784:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-04 11:02:37,784:INFO:Adding model into prep_pipe
+2026-02-04 11:02:37,835:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-04 11:02:37,835:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-04 11:02:37,835:INFO:save_model() successfully completed......................................
+2026-02-04 11:02:37,934:INFO:Initializing load_model()
+2026-02-04 11:02:37,934:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-04 11:02:37,978:INFO:Initializing predict_model()
+2026-02-04 11:02:37,978:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000021A71B43F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-04 11:02:37,978:INFO:Set up data.
+2026-02-04 11:02:38,050:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:02:38,127:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:44:09,072:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:44:09,073:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:44:09,073:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:44:09,073:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:44:10,867:INFO:PyCaret AnomalyExperiment
+2026-02-04 11:44:10,868:INFO:Logging name: anomaly-default-name
+2026-02-04 11:44:10,868:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-04 11:44:10,868:INFO:version 3.3.2
+2026-02-04 11:44:10,868:INFO:Initializing setup()
+2026-02-04 11:44:10,868:INFO:self.USI: 10e3
+2026-02-04 11:44:10,868:INFO:self._variable_keys: {'gpu_n_jobs_param', 'USI', 'data', 'idx', 'memory', 'log_plots_param', 'html_param', 'seed', 'exp_name_log', '_available_plots', 'pipeline', 'logging_param', 'exp_id', 'n_jobs_param', '_ml_usecase', 'X', 'gpu_param'}
+2026-02-04 11:44:10,868:INFO:Checking environment
+2026-02-04 11:44:10,868:INFO:python_version: 3.10.11
+2026-02-04 11:44:10,868:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-04 11:44:10,868:INFO:machine: AMD64
+2026-02-04 11:44:10,898:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-04 11:44:10,898:INFO:Memory: svmem(total=16540737536, available=5870739456, percent=64.5, used=10669998080, free=5870739456)
+2026-02-04 11:44:10,898:INFO:Physical Core: 8
+2026-02-04 11:44:10,899:INFO:Logical Core: 16
+2026-02-04 11:44:10,899:INFO:Checking libraries
+2026-02-04 11:44:10,899:INFO:System:
+2026-02-04 11:44:10,899:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-04 11:44:10,899:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-04 11:44:10,899:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-04 11:44:10,899:INFO:PyCaret required dependencies:
+2026-02-04 11:44:10,900:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-04 11:44:10,968:INFO:                 pip: 25.3
+2026-02-04 11:44:10,969:INFO:          setuptools: 65.5.0
+2026-02-04 11:44:10,969:INFO:             pycaret: 3.3.2
+2026-02-04 11:44:10,969:INFO:             IPython: 8.38.0
+2026-02-04 11:44:10,969:INFO:          ipywidgets: 8.1.8
+2026-02-04 11:44:10,969:INFO:                tqdm: 4.67.1
+2026-02-04 11:44:10,969:INFO:               numpy: 1.26.4
+2026-02-04 11:44:10,969:INFO:              pandas: 2.1.4
+2026-02-04 11:44:10,969:INFO:              jinja2: 3.1.6
+2026-02-04 11:44:10,969:INFO:               scipy: 1.11.4
+2026-02-04 11:44:10,969:INFO:              joblib: 1.3.2
+2026-02-04 11:44:10,969:INFO:             sklearn: 1.4.2
+2026-02-04 11:44:10,969:INFO:                pyod: 2.0.6
+2026-02-04 11:44:10,970:INFO:            imblearn: 0.14.1
+2026-02-04 11:44:10,970:INFO:   category_encoders: 2.7.0
+2026-02-04 11:44:10,970:INFO:            lightgbm: 4.6.0
+2026-02-04 11:44:10,970:INFO:               numba: 0.63.1
+2026-02-04 11:44:10,970:INFO:            requests: 2.32.5
+2026-02-04 11:44:10,970:INFO:          matplotlib: 3.7.5
+2026-02-04 11:44:10,970:INFO:          scikitplot: 0.3.7
+2026-02-04 11:44:10,970:INFO:         yellowbrick: 1.5
+2026-02-04 11:44:10,970:INFO:              plotly: 6.5.1
+2026-02-04 11:44:10,970:INFO:    plotly-resampler: Not installed
+2026-02-04 11:44:10,970:INFO:             kaleido: 1.2.0
+2026-02-04 11:44:10,970:INFO:           schemdraw: 0.15
+2026-02-04 11:44:10,971:INFO:         statsmodels: 0.14.6
+2026-02-04 11:44:10,971:INFO:              sktime: 0.26.0
+2026-02-04 11:44:10,971:INFO:               tbats: 1.1.3
+2026-02-04 11:44:10,971:INFO:            pmdarima: 2.0.4
+2026-02-04 11:44:10,971:INFO:              psutil: 7.2.1
+2026-02-04 11:44:10,971:INFO:          markupsafe: 3.0.3
+2026-02-04 11:44:10,971:INFO:             pickle5: Not installed
+2026-02-04 11:44:10,972:INFO:         cloudpickle: 3.1.2
+2026-02-04 11:44:10,972:INFO:         deprecation: 2.1.0
+2026-02-04 11:44:10,972:INFO:              xxhash: 3.6.0
+2026-02-04 11:44:10,972:INFO:           wurlitzer: Not installed
+2026-02-04 11:44:10,972:INFO:PyCaret optional dependencies:
+2026-02-04 11:44:11,017:INFO:                shap: Not installed
+2026-02-04 11:44:11,017:INFO:           interpret: Not installed
+2026-02-04 11:44:11,017:INFO:                umap: Not installed
+2026-02-04 11:44:11,018:INFO:     ydata_profiling: Not installed
+2026-02-04 11:44:11,018:INFO:  explainerdashboard: Not installed
+2026-02-04 11:44:11,018:INFO:             autoviz: Not installed
+2026-02-04 11:44:11,018:INFO:           fairlearn: Not installed
+2026-02-04 11:44:11,018:INFO:          deepchecks: Not installed
+2026-02-04 11:44:11,018:INFO:             xgboost: Not installed
+2026-02-04 11:44:11,018:INFO:            catboost: Not installed
+2026-02-04 11:44:11,019:INFO:              kmodes: Not installed
+2026-02-04 11:44:11,019:INFO:             mlxtend: Not installed
+2026-02-04 11:44:11,019:INFO:       statsforecast: Not installed
+2026-02-04 11:44:11,019:INFO:        tune_sklearn: Not installed
+2026-02-04 11:44:11,019:INFO:                 ray: Not installed
+2026-02-04 11:44:11,019:INFO:            hyperopt: Not installed
+2026-02-04 11:44:11,020:INFO:              optuna: Not installed
+2026-02-04 11:44:11,020:INFO:               skopt: Not installed
+2026-02-04 11:44:11,020:INFO:              mlflow: Not installed
+2026-02-04 11:44:11,020:INFO:              gradio: Not installed
+2026-02-04 11:44:11,020:INFO:             fastapi: Not installed
+2026-02-04 11:44:11,020:INFO:             uvicorn: Not installed
+2026-02-04 11:44:11,021:INFO:              m2cgen: Not installed
+2026-02-04 11:44:11,021:INFO:           evidently: Not installed
+2026-02-04 11:44:11,021:INFO:               fugue: Not installed
+2026-02-04 11:44:11,021:INFO:           streamlit: 1.52.2
+2026-02-04 11:44:11,021:INFO:             prophet: Not installed
+2026-02-04 11:44:11,021:INFO:None
+2026-02-04 11:44:11,021:INFO:Set up data.
+2026-02-04 11:44:11,028:INFO:Set up index.
+2026-02-04 11:44:11,028:INFO:Assigning column types.
+2026-02-04 11:44:11,034:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-04 11:44:11,634:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-04 11:44:11,639:INFO:Preparing preprocessing pipeline...
+2026-02-04 11:44:11,639:INFO:Set up simple imputation.
+2026-02-04 11:44:11,639:INFO:Set up feature normalization.
+2026-02-04 11:44:11,681:INFO:Finished creating preprocessing pipeline.
+2026-02-04 11:44:11,697:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-04 11:44:11,697:INFO:Creating final display dataframe.
+2026-02-04 11:44:11,752:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  10e3
+2026-02-04 11:44:11,764:INFO:setup() successfully completed in 0.91s...............
+2026-02-04 11:44:11,764:INFO:Initializing create_model()
+2026-02-04 11:44:11,764:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000020D68153F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-04 11:44:11,765:INFO:Checking exceptions
+2026-02-04 11:44:11,810:INFO:Importing untrained model
+2026-02-04 11:44:11,811:INFO:Isolation Forest Imported successfully
+2026-02-04 11:44:11,814:INFO:Fitting Model
+2026-02-04 11:44:12,235:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:44:12,235:INFO:create_models() successfully completed......................................
+2026-02-04 11:44:12,235:INFO:Uploading results into container
+2026-02-04 11:44:12,235:INFO:Uploading model into container now
+2026-02-04 11:44:12,236:INFO:_master_model_container: 1
+2026-02-04 11:44:12,236:INFO:_display_container: 1
+2026-02-04 11:44:12,237:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:44:12,237:INFO:create_model() successfully completed......................................
+2026-02-04 11:44:12,416:INFO:Initializing assign_model()
+2026-02-04 11:44:12,417:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000020D68153F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-04 11:44:12,417:INFO:Checking exceptions
+2026-02-04 11:44:12,417:INFO:Determining Trained Model
+2026-02-04 11:44:12,417:INFO:Trained Model : Isolation Forest
+2026-02-04 11:44:12,417:INFO:Copying data
+2026-02-04 11:44:12,421:INFO:(300, 5)
+2026-02-04 11:44:12,421:INFO:assign_model() successfully completed......................................
+2026-02-04 11:44:12,449:INFO:Initializing save_model()
+2026-02-04 11:44:12,449:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-04 11:44:12,451:INFO:Adding model into prep_pipe
+2026-02-04 11:44:12,582:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-04 11:44:12,598:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-04 11:44:12,598:INFO:save_model() successfully completed......................................
+2026-02-04 11:44:12,772:INFO:Initializing load_model()
+2026-02-04 11:44:12,772:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-04 11:44:12,906:INFO:Initializing predict_model()
+2026-02-04 11:44:12,906:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000020D68153F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-04 11:44:12,906:INFO:Set up data.
+2026-02-04 11:44:13,075:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:44:13,248:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:53:20,042:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:53:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:53:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:53:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 11:53:21,482:INFO:PyCaret AnomalyExperiment
+2026-02-04 11:53:21,482:INFO:Logging name: anomaly-default-name
+2026-02-04 11:53:21,482:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-04 11:53:21,483:INFO:version 3.3.2
+2026-02-04 11:53:21,483:INFO:Initializing setup()
+2026-02-04 11:53:21,483:INFO:self.USI: 48e5
+2026-02-04 11:53:21,483:INFO:self._variable_keys: {'_ml_usecase', 'USI', '_available_plots', 'memory', 'exp_name_log', 'gpu_param', 'pipeline', 'data', 'logging_param', 'exp_id', 'n_jobs_param', 'log_plots_param', 'gpu_n_jobs_param', 'seed', 'html_param', 'idx', 'X'}
+2026-02-04 11:53:21,483:INFO:Checking environment
+2026-02-04 11:53:21,483:INFO:python_version: 3.10.11
+2026-02-04 11:53:21,483:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-04 11:53:21,483:INFO:machine: AMD64
+2026-02-04 11:53:21,513:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-04 11:53:21,514:INFO:Memory: svmem(total=16540737536, available=7903801344, percent=52.2, used=8636936192, free=7903801344)
+2026-02-04 11:53:21,514:INFO:Physical Core: 8
+2026-02-04 11:53:21,514:INFO:Logical Core: 16
+2026-02-04 11:53:21,514:INFO:Checking libraries
+2026-02-04 11:53:21,514:INFO:System:
+2026-02-04 11:53:21,514:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-04 11:53:21,514:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-04 11:53:21,515:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-04 11:53:21,515:INFO:PyCaret required dependencies:
+2026-02-04 11:53:21,515:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-04 11:53:21,561:INFO:                 pip: 25.3
+2026-02-04 11:53:21,561:INFO:          setuptools: 65.5.0
+2026-02-04 11:53:21,561:INFO:             pycaret: 3.3.2
+2026-02-04 11:53:21,561:INFO:             IPython: 8.38.0
+2026-02-04 11:53:21,561:INFO:          ipywidgets: 8.1.8
+2026-02-04 11:53:21,561:INFO:                tqdm: 4.67.1
+2026-02-04 11:53:21,561:INFO:               numpy: 1.26.4
+2026-02-04 11:53:21,561:INFO:              pandas: 2.1.4
+2026-02-04 11:53:21,561:INFO:              jinja2: 3.1.6
+2026-02-04 11:53:21,561:INFO:               scipy: 1.11.4
+2026-02-04 11:53:21,561:INFO:              joblib: 1.3.2
+2026-02-04 11:53:21,562:INFO:             sklearn: 1.4.2
+2026-02-04 11:53:21,562:INFO:                pyod: 2.0.6
+2026-02-04 11:53:21,562:INFO:            imblearn: 0.14.1
+2026-02-04 11:53:21,562:INFO:   category_encoders: 2.7.0
+2026-02-04 11:53:21,562:INFO:            lightgbm: 4.6.0
+2026-02-04 11:53:21,562:INFO:               numba: 0.63.1
+2026-02-04 11:53:21,562:INFO:            requests: 2.32.5
+2026-02-04 11:53:21,562:INFO:          matplotlib: 3.7.5
+2026-02-04 11:53:21,562:INFO:          scikitplot: 0.3.7
+2026-02-04 11:53:21,562:INFO:         yellowbrick: 1.5
+2026-02-04 11:53:21,562:INFO:              plotly: 6.5.1
+2026-02-04 11:53:21,562:INFO:    plotly-resampler: Not installed
+2026-02-04 11:53:21,562:INFO:             kaleido: 1.2.0
+2026-02-04 11:53:21,562:INFO:           schemdraw: 0.15
+2026-02-04 11:53:21,562:INFO:         statsmodels: 0.14.6
+2026-02-04 11:53:21,563:INFO:              sktime: 0.26.0
+2026-02-04 11:53:21,563:INFO:               tbats: 1.1.3
+2026-02-04 11:53:21,563:INFO:            pmdarima: 2.0.4
+2026-02-04 11:53:21,563:INFO:              psutil: 7.2.1
+2026-02-04 11:53:21,563:INFO:          markupsafe: 3.0.3
+2026-02-04 11:53:21,563:INFO:             pickle5: Not installed
+2026-02-04 11:53:21,563:INFO:         cloudpickle: 3.1.2
+2026-02-04 11:53:21,563:INFO:         deprecation: 2.1.0
+2026-02-04 11:53:21,563:INFO:              xxhash: 3.6.0
+2026-02-04 11:53:21,563:INFO:           wurlitzer: Not installed
+2026-02-04 11:53:21,563:INFO:PyCaret optional dependencies:
+2026-02-04 11:53:21,596:INFO:                shap: Not installed
+2026-02-04 11:53:21,596:INFO:           interpret: Not installed
+2026-02-04 11:53:21,596:INFO:                umap: Not installed
+2026-02-04 11:53:21,596:INFO:     ydata_profiling: Not installed
+2026-02-04 11:53:21,596:INFO:  explainerdashboard: Not installed
+2026-02-04 11:53:21,596:INFO:             autoviz: Not installed
+2026-02-04 11:53:21,596:INFO:           fairlearn: Not installed
+2026-02-04 11:53:21,596:INFO:          deepchecks: Not installed
+2026-02-04 11:53:21,596:INFO:             xgboost: Not installed
+2026-02-04 11:53:21,597:INFO:            catboost: Not installed
+2026-02-04 11:53:21,597:INFO:              kmodes: Not installed
+2026-02-04 11:53:21,597:INFO:             mlxtend: Not installed
+2026-02-04 11:53:21,597:INFO:       statsforecast: Not installed
+2026-02-04 11:53:21,597:INFO:        tune_sklearn: Not installed
+2026-02-04 11:53:21,597:INFO:                 ray: Not installed
+2026-02-04 11:53:21,597:INFO:            hyperopt: Not installed
+2026-02-04 11:53:21,597:INFO:              optuna: Not installed
+2026-02-04 11:53:21,597:INFO:               skopt: Not installed
+2026-02-04 11:53:21,597:INFO:              mlflow: Not installed
+2026-02-04 11:53:21,597:INFO:              gradio: Not installed
+2026-02-04 11:53:21,597:INFO:             fastapi: Not installed
+2026-02-04 11:53:21,597:INFO:             uvicorn: Not installed
+2026-02-04 11:53:21,597:INFO:              m2cgen: Not installed
+2026-02-04 11:53:21,597:INFO:           evidently: Not installed
+2026-02-04 11:53:21,598:INFO:               fugue: Not installed
+2026-02-04 11:53:21,598:INFO:           streamlit: 1.52.2
+2026-02-04 11:53:21,598:INFO:             prophet: Not installed
+2026-02-04 11:53:21,598:INFO:None
+2026-02-04 11:53:21,598:INFO:Set up data.
+2026-02-04 11:53:21,601:INFO:Set up index.
+2026-02-04 11:53:21,602:INFO:Assigning column types.
+2026-02-04 11:53:21,605:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-04 11:53:22,112:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-04 11:53:22,116:INFO:Preparing preprocessing pipeline...
+2026-02-04 11:53:22,116:INFO:Set up simple imputation.
+2026-02-04 11:53:22,116:INFO:Set up feature normalization.
+2026-02-04 11:53:22,151:INFO:Finished creating preprocessing pipeline.
+2026-02-04 11:53:22,162:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-04 11:53:22,162:INFO:Creating final display dataframe.
+2026-02-04 11:53:22,194:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  48e5
+2026-02-04 11:53:22,200:INFO:setup() successfully completed in 0.73s...............
+2026-02-04 11:53:22,200:INFO:Initializing create_model()
+2026-02-04 11:53:22,201:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001E2B5303F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-04 11:53:22,201:INFO:Checking exceptions
+2026-02-04 11:53:22,226:INFO:Importing untrained model
+2026-02-04 11:53:22,227:INFO:Isolation Forest Imported successfully
+2026-02-04 11:53:22,227:INFO:Fitting Model
+2026-02-04 11:53:22,561:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:53:22,561:INFO:create_models() successfully completed......................................
+2026-02-04 11:53:22,561:INFO:Uploading results into container
+2026-02-04 11:53:22,561:INFO:Uploading model into container now
+2026-02-04 11:53:22,561:INFO:_master_model_container: 1
+2026-02-04 11:53:22,561:INFO:_display_container: 1
+2026-02-04 11:53:22,562:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-04 11:53:22,562:INFO:create_model() successfully completed......................................
+2026-02-04 11:53:22,707:INFO:Initializing assign_model()
+2026-02-04 11:53:22,707:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001E2B5303F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-04 11:53:22,707:INFO:Checking exceptions
+2026-02-04 11:53:22,708:INFO:Determining Trained Model
+2026-02-04 11:53:22,708:INFO:Trained Model : Isolation Forest
+2026-02-04 11:53:22,708:INFO:Copying data
+2026-02-04 11:53:22,710:INFO:(300, 5)
+2026-02-04 11:53:22,710:INFO:assign_model() successfully completed......................................
+2026-02-04 11:53:22,729:INFO:Initializing save_model()
+2026-02-04 11:53:22,729:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-04 11:53:22,730:INFO:Adding model into prep_pipe
+2026-02-04 11:53:22,828:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-04 11:53:22,843:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-04 11:53:22,844:INFO:save_model() successfully completed......................................
+2026-02-04 11:53:22,983:INFO:Initializing load_model()
+2026-02-04 11:53:22,983:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-04 11:53:23,073:INFO:Initializing predict_model()
+2026-02-04 11:53:23,073:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001E2B5303F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-04 11:53:23,073:INFO:Set up data.
+2026-02-04 11:53:23,190:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 11:53:23,309:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-04 23:00:04,662:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 23:00:04,665:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 23:00:04,665:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-04 23:00:04,665:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 08:38:48,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 08:38:48,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 08:38:48,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 08:38:48,324:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 08:38:52,996:INFO:Initializing load_model()
+2026-02-05 08:38:52,996:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:38:53,947:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-02-05 08:40:38,681:INFO:Initializing load_model()
+2026-02-05 08:40:38,681:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:41:13,082:INFO:Initializing load_model()
+2026-02-05 08:41:13,082:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:42:19,661:INFO:Initializing load_model()
+2026-02-05 08:42:19,661:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:57:21,568:INFO:Initializing load_model()
+2026-02-05 08:57:21,568:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:57:36,043:INFO:Initializing load_model()
+2026-02-05 08:57:36,043:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:57:40,701:INFO:Initializing load_model()
+2026-02-05 08:57:40,701:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:57:47,206:INFO:Initializing load_model()
+2026-02-05 08:57:47,208:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 08:59:48,896:INFO:Initializing load_model()
+2026-02-05 08:59:48,896:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:01:53,783:INFO:Initializing load_model()
+2026-02-05 09:01:53,783:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:02:15,117:INFO:Initializing load_model()
+2026-02-05 09:02:15,117:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:02:19,464:INFO:Initializing load_model()
+2026-02-05 09:02:19,464:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:02:24,391:INFO:Initializing load_model()
+2026-02-05 09:02:24,391:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:07:21,395:INFO:Initializing load_model()
+2026-02-05 09:07:21,395:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:07:24,039:INFO:Initializing load_model()
+2026-02-05 09:07:24,042:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:07:24,156:INFO:Initializing predict_model()
+2026-02-05 09:07:24,156:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7459570>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 09:07:24,156:INFO:Set up data.
+2026-02-05 09:07:24,186:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:07:24,196:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:18:35,547:INFO:Initializing load_model()
+2026-02-05 09:18:35,547:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:18:35,663:INFO:Initializing predict_model()
+2026-02-05 09:18:35,663:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F73CAE90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 09:18:35,663:INFO:Set up data.
+2026-02-05 09:18:35,681:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:18:35,710:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:29:09,043:INFO:Initializing load_model()
+2026-02-05 09:29:09,043:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:31:34,868:INFO:Initializing load_model()
+2026-02-05 09:31:34,868:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:34:05,614:INFO:Initializing load_model()
+2026-02-05 09:34:05,614:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:35:57,445:INFO:Initializing load_model()
+2026-02-05 09:35:57,445:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:46:04,161:INFO:Initializing load_model()
+2026-02-05 09:46:04,161:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:46:40,658:INFO:Initializing load_model()
+2026-02-05 09:46:40,658:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:48:06,760:INFO:Initializing load_model()
+2026-02-05 09:48:06,760:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:48:20,876:INFO:Initializing load_model()
+2026-02-05 09:48:20,876:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:48:28,344:INFO:Initializing load_model()
+2026-02-05 09:48:28,344:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:52:26,774:INFO:Initializing load_model()
+2026-02-05 09:52:26,774:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:54:49,840:INFO:Initializing load_model()
+2026-02-05 09:54:49,849:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 09:54:49,954:INFO:Initializing predict_model()
+2026-02-05 09:54:49,954:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7424040>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 09:54:49,954:INFO:Set up data.
+2026-02-05 09:54:49,972:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:54:49,992:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 09:56:45,748:INFO:Initializing load_model()
+2026-02-05 09:56:45,750:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:00:43,562:INFO:Initializing load_model()
+2026-02-05 10:00:43,564:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:00:56,431:INFO:Initializing load_model()
+2026-02-05 10:00:56,431:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:01:13,242:INFO:Initializing load_model()
+2026-02-05 10:01:13,242:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:01:19,530:INFO:Initializing load_model()
+2026-02-05 10:01:19,533:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:01:19,647:INFO:Initializing predict_model()
+2026-02-05 10:01:19,647:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163B075C700>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:01:19,647:INFO:Set up data.
+2026-02-05 10:01:19,660:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:01:19,682:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:01:27,498:INFO:Initializing load_model()
+2026-02-05 10:01:27,498:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:01:30,647:INFO:Initializing load_model()
+2026-02-05 10:01:30,647:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:01:30,780:INFO:Initializing predict_model()
+2026-02-05 10:01:30,780:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7485210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:01:30,780:INFO:Set up data.
+2026-02-05 10:01:30,796:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:01:30,806:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:03:11,453:INFO:Initializing load_model()
+2026-02-05 10:03:11,457:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:20,121:INFO:Initializing load_model()
+2026-02-05 10:03:20,121:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:32,870:INFO:Initializing load_model()
+2026-02-05 10:03:32,870:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:35,831:INFO:Initializing load_model()
+2026-02-05 10:03:35,836:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:35,946:INFO:Initializing predict_model()
+2026-02-05 10:03:35,946:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7E472E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:03:35,946:INFO:Set up data.
+2026-02-05 10:03:35,963:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:03:35,978:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:03:43,810:INFO:Initializing load_model()
+2026-02-05 10:03:43,810:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:46,794:INFO:Initializing load_model()
+2026-02-05 10:03:46,794:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:03:46,903:INFO:Initializing predict_model()
+2026-02-05 10:03:46,905:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7E46440>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:03:46,905:INFO:Set up data.
+2026-02-05 10:03:46,909:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:03:46,926:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:05:11,738:INFO:Initializing load_model()
+2026-02-05 10:05:11,738:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:05:28,443:INFO:Initializing load_model()
+2026-02-05 10:05:28,443:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:05:32,381:INFO:Initializing load_model()
+2026-02-05 10:05:32,381:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:05:34,866:INFO:Initializing load_model()
+2026-02-05 10:05:34,866:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:05:34,968:INFO:Initializing predict_model()
+2026-02-05 10:05:34,968:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7C7BC40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:05:34,968:INFO:Set up data.
+2026-02-05 10:05:34,983:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:05:35,001:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:07:15,272:INFO:Initializing load_model()
+2026-02-05 10:07:15,272:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:26,747:INFO:Initializing load_model()
+2026-02-05 10:18:26,747:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:30,056:INFO:Initializing load_model()
+2026-02-05 10:18:30,058:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:47,397:INFO:Initializing load_model()
+2026-02-05 10:18:47,397:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:50,703:INFO:Initializing load_model()
+2026-02-05 10:18:50,703:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:53,681:INFO:Initializing load_model()
+2026-02-05 10:18:53,681:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:18:53,801:INFO:Initializing predict_model()
+2026-02-05 10:18:53,801:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7C7B880>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:18:53,801:INFO:Set up data.
+2026-02-05 10:18:53,819:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:18:53,835:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:19:33,596:INFO:Initializing load_model()
+2026-02-05 10:19:33,596:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:19:45,977:INFO:Initializing load_model()
+2026-02-05 10:19:45,977:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:19:50,015:INFO:Initializing load_model()
+2026-02-05 10:19:50,015:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:19:53,864:INFO:Initializing load_model()
+2026-02-05 10:19:53,870:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:19:54,323:INFO:Initializing load_model()
+2026-02-05 10:19:54,323:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:19:54,434:INFO:Initializing predict_model()
+2026-02-05 10:19:54,434:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163B06E3940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:19:54,434:INFO:Set up data.
+2026-02-05 10:19:54,453:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:19:54,473:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:19:54,757:INFO:Initializing load_model()
+2026-02-05 10:19:54,757:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:11,896:INFO:Initializing load_model()
+2026-02-05 10:20:11,896:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:19,102:INFO:Initializing load_model()
+2026-02-05 10:20:19,103:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:21,946:INFO:Initializing load_model()
+2026-02-05 10:20:21,946:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:24,809:INFO:Initializing load_model()
+2026-02-05 10:20:24,809:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:24,910:INFO:Initializing predict_model()
+2026-02-05 10:20:24,910:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7E463E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:20:24,910:INFO:Set up data.
+2026-02-05 10:20:24,926:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:20:24,939:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:20:25,208:INFO:Initializing load_model()
+2026-02-05 10:20:25,208:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:34,455:INFO:Initializing load_model()
+2026-02-05 10:20:34,455:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:41,244:INFO:Initializing load_model()
+2026-02-05 10:20:41,244:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:41,710:INFO:Initializing load_model()
+2026-02-05 10:20:41,710:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:20:41,821:INFO:Initializing predict_model()
+2026-02-05 10:20:41,821:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163B075C6A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:20:41,821:INFO:Set up data.
+2026-02-05 10:20:41,839:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:20:41,851:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:20:42,094:INFO:Initializing load_model()
+2026-02-05 10:20:42,094:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:15,672:INFO:Initializing load_model()
+2026-02-05 10:22:15,675:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:25,398:INFO:Initializing load_model()
+2026-02-05 10:22:25,398:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:25,516:INFO:Initializing predict_model()
+2026-02-05 10:22:25,516:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7485420>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:22:25,516:INFO:Set up data.
+2026-02-05 10:22:25,526:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:25,541:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:36,772:INFO:Initializing load_model()
+2026-02-05 10:22:36,775:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:40,513:INFO:Initializing load_model()
+2026-02-05 10:22:40,514:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:46,147:INFO:Initializing load_model()
+2026-02-05 10:22:46,147:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:46,636:INFO:Initializing load_model()
+2026-02-05 10:22:46,636:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:46,741:INFO:Initializing predict_model()
+2026-02-05 10:22:46,741:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163B075C1C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:22:46,741:INFO:Set up data.
+2026-02-05 10:22:46,756:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:46,775:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:47,074:INFO:Initializing load_model()
+2026-02-05 10:22:47,074:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:58,153:INFO:Initializing load_model()
+2026-02-05 10:22:58,153:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:22:58,269:INFO:Initializing predict_model()
+2026-02-05 10:22:58,269:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F73CB550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:22:58,269:INFO:Set up data.
+2026-02-05 10:22:58,273:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:58,297:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:22:58,544:INFO:Initializing load_model()
+2026-02-05 10:22:58,546:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:20,582:INFO:Initializing load_model()
+2026-02-05 10:26:20,582:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:36,354:INFO:Initializing load_model()
+2026-02-05 10:26:36,354:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:39,031:INFO:Initializing load_model()
+2026-02-05 10:26:39,031:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:44,575:INFO:Initializing load_model()
+2026-02-05 10:26:44,575:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:44,702:INFO:Initializing predict_model()
+2026-02-05 10:26:44,702:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F73CAB90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:26:44,702:INFO:Set up data.
+2026-02-05 10:26:44,714:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:26:44,745:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:26:44,938:INFO:Initializing load_model()
+2026-02-05 10:26:44,938:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:26:56,964:INFO:Initializing load_model()
+2026-02-05 10:26:56,964:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:00,667:INFO:Initializing load_model()
+2026-02-05 10:27:00,667:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:00,778:INFO:Initializing predict_model()
+2026-02-05 10:27:00,778:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7553520>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:27:00,778:INFO:Set up data.
+2026-02-05 10:27:00,790:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:00,810:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:01,095:INFO:Initializing load_model()
+2026-02-05 10:27:01,095:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:09,724:INFO:Initializing load_model()
+2026-02-05 10:27:09,724:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:15,981:INFO:Initializing load_model()
+2026-02-05 10:27:15,981:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:16,444:INFO:Initializing load_model()
+2026-02-05 10:27:16,444:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:16,566:INFO:Initializing predict_model()
+2026-02-05 10:27:16,566:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163B07A8790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:27:16,566:INFO:Set up data.
+2026-02-05 10:27:16,578:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:16,598:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:16,882:INFO:Initializing load_model()
+2026-02-05 10:27:16,882:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:27,146:INFO:Initializing load_model()
+2026-02-05 10:27:27,146:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 10:27:27,263:INFO:Initializing predict_model()
+2026-02-05 10:27:27,263:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x00000163F7CDCFA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 10:27:27,263:INFO:Set up data.
+2026-02-05 10:27:27,277:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:27,295:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 10:27:27,549:INFO:Initializing load_model()
+2026-02-05 10:27:27,549:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:19:53,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:19:53,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:19:53,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:19:53,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:19:57,825:INFO:Initializing load_model()
+2026-02-05 11:19:57,825:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:19:58,436:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-02-05 11:25:21,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:21,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:21,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:21,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:23,028:INFO:PyCaret AnomalyExperiment
+2026-02-05 11:25:23,028:INFO:Logging name: anomaly-default-name
+2026-02-05 11:25:23,028:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-05 11:25:23,028:INFO:version 3.3.2
+2026-02-05 11:25:23,030:INFO:Initializing setup()
+2026-02-05 11:25:23,030:INFO:self.USI: 0c27
+2026-02-05 11:25:23,030:INFO:self._variable_keys: {'gpu_n_jobs_param', 'USI', 'n_jobs_param', 'pipeline', 'memory', 'log_plots_param', '_available_plots', 'X', '_ml_usecase', 'exp_name_log', 'html_param', 'logging_param', 'idx', 'seed', 'data', 'exp_id', 'gpu_param'}
+2026-02-05 11:25:23,030:INFO:Checking environment
+2026-02-05 11:25:23,031:INFO:python_version: 3.10.11
+2026-02-05 11:25:23,031:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-05 11:25:23,031:INFO:machine: AMD64
+2026-02-05 11:25:23,061:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-05 11:25:23,062:INFO:Memory: svmem(total=16540737536, available=5915766784, percent=64.2, used=10624970752, free=5915766784)
+2026-02-05 11:25:23,062:INFO:Physical Core: 8
+2026-02-05 11:25:23,062:INFO:Logical Core: 16
+2026-02-05 11:25:23,062:INFO:Checking libraries
+2026-02-05 11:25:23,062:INFO:System:
+2026-02-05 11:25:23,062:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-05 11:25:23,062:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-05 11:25:23,063:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-05 11:25:23,063:INFO:PyCaret required dependencies:
+2026-02-05 11:25:23,063:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-05 11:25:23,112:INFO:                 pip: 25.3
+2026-02-05 11:25:23,112:INFO:          setuptools: 65.5.0
+2026-02-05 11:25:23,112:INFO:             pycaret: 3.3.2
+2026-02-05 11:25:23,112:INFO:             IPython: 8.38.0
+2026-02-05 11:25:23,112:INFO:          ipywidgets: 8.1.8
+2026-02-05 11:25:23,112:INFO:                tqdm: 4.67.1
+2026-02-05 11:25:23,112:INFO:               numpy: 1.26.4
+2026-02-05 11:25:23,113:INFO:              pandas: 2.1.4
+2026-02-05 11:25:23,113:INFO:              jinja2: 3.1.6
+2026-02-05 11:25:23,113:INFO:               scipy: 1.11.4
+2026-02-05 11:25:23,113:INFO:              joblib: 1.3.2
+2026-02-05 11:25:23,113:INFO:             sklearn: 1.4.2
+2026-02-05 11:25:23,113:INFO:                pyod: 2.0.6
+2026-02-05 11:25:23,113:INFO:            imblearn: 0.14.1
+2026-02-05 11:25:23,113:INFO:   category_encoders: 2.7.0
+2026-02-05 11:25:23,113:INFO:            lightgbm: 4.6.0
+2026-02-05 11:25:23,113:INFO:               numba: 0.63.1
+2026-02-05 11:25:23,113:INFO:            requests: 2.32.5
+2026-02-05 11:25:23,113:INFO:          matplotlib: 3.7.5
+2026-02-05 11:25:23,113:INFO:          scikitplot: 0.3.7
+2026-02-05 11:25:23,114:INFO:         yellowbrick: 1.5
+2026-02-05 11:25:23,114:INFO:              plotly: 6.5.1
+2026-02-05 11:25:23,114:INFO:    plotly-resampler: Not installed
+2026-02-05 11:25:23,114:INFO:             kaleido: 1.2.0
+2026-02-05 11:25:23,114:INFO:           schemdraw: 0.15
+2026-02-05 11:25:23,114:INFO:         statsmodels: 0.14.6
+2026-02-05 11:25:23,114:INFO:              sktime: 0.26.0
+2026-02-05 11:25:23,114:INFO:               tbats: 1.1.3
+2026-02-05 11:25:23,114:INFO:            pmdarima: 2.0.4
+2026-02-05 11:25:23,114:INFO:              psutil: 7.2.1
+2026-02-05 11:25:23,114:INFO:          markupsafe: 3.0.3
+2026-02-05 11:25:23,114:INFO:             pickle5: Not installed
+2026-02-05 11:25:23,114:INFO:         cloudpickle: 3.1.2
+2026-02-05 11:25:23,114:INFO:         deprecation: 2.1.0
+2026-02-05 11:25:23,115:INFO:              xxhash: 3.6.0
+2026-02-05 11:25:23,115:INFO:           wurlitzer: Not installed
+2026-02-05 11:25:23,115:INFO:PyCaret optional dependencies:
+2026-02-05 11:25:23,160:INFO:                shap: Not installed
+2026-02-05 11:25:23,160:INFO:           interpret: Not installed
+2026-02-05 11:25:23,160:INFO:                umap: Not installed
+2026-02-05 11:25:23,160:INFO:     ydata_profiling: Not installed
+2026-02-05 11:25:23,161:INFO:  explainerdashboard: Not installed
+2026-02-05 11:25:23,161:INFO:             autoviz: Not installed
+2026-02-05 11:25:23,161:INFO:           fairlearn: Not installed
+2026-02-05 11:25:23,161:INFO:          deepchecks: Not installed
+2026-02-05 11:25:23,161:INFO:             xgboost: Not installed
+2026-02-05 11:25:23,161:INFO:            catboost: Not installed
+2026-02-05 11:25:23,161:INFO:              kmodes: Not installed
+2026-02-05 11:25:23,161:INFO:             mlxtend: Not installed
+2026-02-05 11:25:23,161:INFO:       statsforecast: Not installed
+2026-02-05 11:25:23,162:INFO:        tune_sklearn: Not installed
+2026-02-05 11:25:23,162:INFO:                 ray: Not installed
+2026-02-05 11:25:23,162:INFO:            hyperopt: Not installed
+2026-02-05 11:25:23,162:INFO:              optuna: Not installed
+2026-02-05 11:25:23,162:INFO:               skopt: Not installed
+2026-02-05 11:25:23,163:INFO:              mlflow: Not installed
+2026-02-05 11:25:23,163:INFO:              gradio: Not installed
+2026-02-05 11:25:23,163:INFO:             fastapi: Not installed
+2026-02-05 11:25:23,163:INFO:             uvicorn: Not installed
+2026-02-05 11:25:23,163:INFO:              m2cgen: Not installed
+2026-02-05 11:25:23,163:INFO:           evidently: Not installed
+2026-02-05 11:25:23,163:INFO:               fugue: Not installed
+2026-02-05 11:25:23,163:INFO:           streamlit: 1.52.2
+2026-02-05 11:25:23,163:INFO:             prophet: Not installed
+2026-02-05 11:25:23,164:INFO:None
+2026-02-05 11:25:23,164:INFO:Set up data.
+2026-02-05 11:25:23,169:INFO:Set up index.
+2026-02-05 11:25:23,169:INFO:Assigning column types.
+2026-02-05 11:25:23,178:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-05 11:25:23,688:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-05 11:25:23,693:INFO:Preparing preprocessing pipeline...
+2026-02-05 11:25:23,693:INFO:Set up simple imputation.
+2026-02-05 11:25:23,693:INFO:Set up feature normalization.
+2026-02-05 11:25:23,726:INFO:Finished creating preprocessing pipeline.
+2026-02-05 11:25:23,735:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-05 11:25:23,735:INFO:Creating final display dataframe.
+2026-02-05 11:25:23,770:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  0c27
+2026-02-05 11:25:23,776:INFO:setup() successfully completed in 0.76s...............
+2026-02-05 11:25:23,777:INFO:Initializing create_model()
+2026-02-05 11:25:23,777:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001EF9BC23F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-05 11:25:23,777:INFO:Checking exceptions
+2026-02-05 11:25:23,805:INFO:Importing untrained model
+2026-02-05 11:25:23,806:INFO:Isolation Forest Imported successfully
+2026-02-05 11:25:23,807:INFO:Fitting Model
+2026-02-05 11:25:59,695:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:59,696:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:59,696:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:25:59,696:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-05 11:26:01,211:INFO:PyCaret AnomalyExperiment
+2026-02-05 11:26:01,211:INFO:Logging name: anomaly-default-name
+2026-02-05 11:26:01,211:INFO:ML Usecase: MLUsecase.ANOMALY
+2026-02-05 11:26:01,211:INFO:version 3.3.2
+2026-02-05 11:26:01,211:INFO:Initializing setup()
+2026-02-05 11:26:01,211:INFO:self.USI: 259c
+2026-02-05 11:26:01,211:INFO:self._variable_keys: {'exp_id', 'pipeline', '_ml_usecase', 'logging_param', 'X', 'exp_name_log', 'gpu_param', 'html_param', '_available_plots', 'idx', 'data', 'seed', 'memory', 'n_jobs_param', 'gpu_n_jobs_param', 'log_plots_param', 'USI'}
+2026-02-05 11:26:01,211:INFO:Checking environment
+2026-02-05 11:26:01,211:INFO:python_version: 3.10.11
+2026-02-05 11:26:01,213:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2026-02-05 11:26:01,213:INFO:machine: AMD64
+2026-02-05 11:26:01,253:INFO:platform: Windows-10-10.0.26100-SP0
+2026-02-05 11:26:01,256:INFO:Memory: svmem(total=16540737536, available=5977305088, percent=63.9, used=10563432448, free=5977305088)
+2026-02-05 11:26:01,256:INFO:Physical Core: 8
+2026-02-05 11:26:01,256:INFO:Logical Core: 16
+2026-02-05 11:26:01,256:INFO:Checking libraries
+2026-02-05 11:26:01,256:INFO:System:
+2026-02-05 11:26:01,256:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-02-05 11:26:01,256:INFO:executable: C:\Users\Rhiswana\pycaret-env\Scripts\python.exe
+2026-02-05 11:26:01,256:INFO:   machine: Windows-10-10.0.26100-SP0
+2026-02-05 11:26:01,256:INFO:PyCaret required dependencies:
+2026-02-05 11:26:01,256:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\_distutils_hack\__init__.py:33: UserWarning:
+
+Setuptools is replacing distutils.
+
+
+2026-02-05 11:26:01,316:INFO:                 pip: 25.3
+2026-02-05 11:26:01,316:INFO:          setuptools: 65.5.0
+2026-02-05 11:26:01,316:INFO:             pycaret: 3.3.2
+2026-02-05 11:26:01,316:INFO:             IPython: 8.38.0
+2026-02-05 11:26:01,316:INFO:          ipywidgets: 8.1.8
+2026-02-05 11:26:01,316:INFO:                tqdm: 4.67.1
+2026-02-05 11:26:01,316:INFO:               numpy: 1.26.4
+2026-02-05 11:26:01,316:INFO:              pandas: 2.1.4
+2026-02-05 11:26:01,316:INFO:              jinja2: 3.1.6
+2026-02-05 11:26:01,316:INFO:               scipy: 1.11.4
+2026-02-05 11:26:01,316:INFO:              joblib: 1.3.2
+2026-02-05 11:26:01,316:INFO:             sklearn: 1.4.2
+2026-02-05 11:26:01,316:INFO:                pyod: 2.0.6
+2026-02-05 11:26:01,316:INFO:            imblearn: 0.14.1
+2026-02-05 11:26:01,316:INFO:   category_encoders: 2.7.0
+2026-02-05 11:26:01,316:INFO:            lightgbm: 4.6.0
+2026-02-05 11:26:01,316:INFO:               numba: 0.63.1
+2026-02-05 11:26:01,316:INFO:            requests: 2.32.5
+2026-02-05 11:26:01,316:INFO:          matplotlib: 3.7.5
+2026-02-05 11:26:01,316:INFO:          scikitplot: 0.3.7
+2026-02-05 11:26:01,316:INFO:         yellowbrick: 1.5
+2026-02-05 11:26:01,316:INFO:              plotly: 6.5.1
+2026-02-05 11:26:01,316:INFO:    plotly-resampler: Not installed
+2026-02-05 11:26:01,316:INFO:             kaleido: 1.2.0
+2026-02-05 11:26:01,316:INFO:           schemdraw: 0.15
+2026-02-05 11:26:01,316:INFO:         statsmodels: 0.14.6
+2026-02-05 11:26:01,316:INFO:              sktime: 0.26.0
+2026-02-05 11:26:01,316:INFO:               tbats: 1.1.3
+2026-02-05 11:26:01,316:INFO:            pmdarima: 2.0.4
+2026-02-05 11:26:01,316:INFO:              psutil: 7.2.1
+2026-02-05 11:26:01,316:INFO:          markupsafe: 3.0.3
+2026-02-05 11:26:01,316:INFO:             pickle5: Not installed
+2026-02-05 11:26:01,316:INFO:         cloudpickle: 3.1.2
+2026-02-05 11:26:01,316:INFO:         deprecation: 2.1.0
+2026-02-05 11:26:01,316:INFO:              xxhash: 3.6.0
+2026-02-05 11:26:01,316:INFO:           wurlitzer: Not installed
+2026-02-05 11:26:01,316:INFO:PyCaret optional dependencies:
+2026-02-05 11:26:01,354:INFO:                shap: Not installed
+2026-02-05 11:26:01,354:INFO:           interpret: Not installed
+2026-02-05 11:26:01,354:INFO:                umap: Not installed
+2026-02-05 11:26:01,354:INFO:     ydata_profiling: Not installed
+2026-02-05 11:26:01,354:INFO:  explainerdashboard: Not installed
+2026-02-05 11:26:01,354:INFO:             autoviz: Not installed
+2026-02-05 11:26:01,354:INFO:           fairlearn: Not installed
+2026-02-05 11:26:01,354:INFO:          deepchecks: Not installed
+2026-02-05 11:26:01,354:INFO:             xgboost: Not installed
+2026-02-05 11:26:01,354:INFO:            catboost: Not installed
+2026-02-05 11:26:01,354:INFO:              kmodes: Not installed
+2026-02-05 11:26:01,354:INFO:             mlxtend: Not installed
+2026-02-05 11:26:01,354:INFO:       statsforecast: Not installed
+2026-02-05 11:26:01,354:INFO:        tune_sklearn: Not installed
+2026-02-05 11:26:01,354:INFO:                 ray: Not installed
+2026-02-05 11:26:01,354:INFO:            hyperopt: Not installed
+2026-02-05 11:26:01,356:INFO:              optuna: Not installed
+2026-02-05 11:26:01,356:INFO:               skopt: Not installed
+2026-02-05 11:26:01,356:INFO:              mlflow: Not installed
+2026-02-05 11:26:01,356:INFO:              gradio: Not installed
+2026-02-05 11:26:01,356:INFO:             fastapi: Not installed
+2026-02-05 11:26:01,356:INFO:             uvicorn: Not installed
+2026-02-05 11:26:01,356:INFO:              m2cgen: Not installed
+2026-02-05 11:26:01,356:INFO:           evidently: Not installed
+2026-02-05 11:26:01,356:INFO:               fugue: Not installed
+2026-02-05 11:26:01,356:INFO:           streamlit: 1.52.2
+2026-02-05 11:26:01,356:INFO:             prophet: Not installed
+2026-02-05 11:26:01,356:INFO:None
+2026-02-05 11:26:01,356:INFO:Set up data.
+2026-02-05 11:26:01,358:INFO:Set up index.
+2026-02-05 11:26:01,360:INFO:Assigning column types.
+2026-02-05 11:26:01,365:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2026-02-05 11:26:01,910:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2026-02-05 11:26:01,914:INFO:Preparing preprocessing pipeline...
+2026-02-05 11:26:01,914:INFO:Set up simple imputation.
+2026-02-05 11:26:01,914:INFO:Set up feature normalization.
+2026-02-05 11:26:01,943:INFO:Finished creating preprocessing pipeline.
+2026-02-05 11:26:01,954:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2026-02-05 11:26:01,957:INFO:Creating final display dataframe.
+2026-02-05 11:26:01,990:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape              (300, 3)
+2   Transformed data shape              (300, 3)
+3         Numeric features                     3
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  anomaly-default-name
+14                     USI                  259c
+2026-02-05 11:26:01,994:INFO:setup() successfully completed in 0.79s...............
+2026-02-05 11:26:01,994:INFO:Initializing create_model()
+2026-02-05 11:26:01,994:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000022126633F70>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2026-02-05 11:26:01,994:INFO:Checking exceptions
+2026-02-05 11:26:02,026:INFO:Importing untrained model
+2026-02-05 11:26:02,027:INFO:Isolation Forest Imported successfully
+2026-02-05 11:26:02,028:INFO:Fitting Model
+2026-02-05 11:26:02,396:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-05 11:26:02,397:INFO:create_models() successfully completed......................................
+2026-02-05 11:26:02,397:INFO:Uploading results into container
+2026-02-05 11:26:02,397:INFO:Uploading model into container now
+2026-02-05 11:26:02,397:INFO:_master_model_container: 1
+2026-02-05 11:26:02,397:INFO:_display_container: 1
+2026-02-05 11:26:02,397:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2026-02-05 11:26:02,397:INFO:create_model() successfully completed......................................
+2026-02-05 11:26:02,536:INFO:Initializing assign_model()
+2026-02-05 11:26:02,536:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000022126633F70>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2026-02-05 11:26:02,536:INFO:Checking exceptions
+2026-02-05 11:26:02,536:INFO:Determining Trained Model
+2026-02-05 11:26:02,538:INFO:Trained Model : Isolation Forest
+2026-02-05 11:26:02,538:INFO:Copying data
+2026-02-05 11:26:02,538:INFO:(300, 5)
+2026-02-05 11:26:02,538:INFO:assign_model() successfully completed......................................
+2026-02-05 11:26:02,556:INFO:Initializing save_model()
+2026-02-05 11:26:02,562:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=factory_anomaly_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2026-02-05 11:26:02,562:INFO:Adding model into prep_pipe
+2026-02-05 11:26:02,716:INFO:factory_anomaly_model.pkl saved in current working directory
+2026-02-05 11:26:02,728:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))])
+2026-02-05 11:26:02,728:INFO:save_model() successfully completed......................................
+2026-02-05 11:26:02,894:INFO:Initializing load_model()
+2026-02-05 11:26:02,894:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:26:02,992:INFO:Initializing predict_model()
+2026-02-05 11:26:02,992:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000022126633F70>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Rhiswana\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 11:26:02,993:INFO:Set up data.
+2026-02-05 11:26:03,125:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-05 11:26:03,258:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2026-02-05 11:28:19,436:INFO:Initializing load_model()
+2026-02-05 11:28:19,436:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:28:19,557:INFO:Initializing predict_model()
+2026-02-05 11:28:19,560:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000012BA49BA860>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 11:28:19,561:INFO:Set up data.
+2026-02-05 11:28:19,580:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 11:28:19,602:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 11:28:19,811:INFO:Initializing load_model()
+2026-02-05 11:28:19,811:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:28:32,857:INFO:Initializing load_model()
+2026-02-05 11:28:32,857:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:28:37,323:INFO:Initializing load_model()
+2026-02-05 11:28:37,323:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:28:37,763:INFO:Initializing load_model()
+2026-02-05 11:28:37,763:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
+2026-02-05 11:28:37,872:INFO:Initializing predict_model()
+2026-02-05 11:28:37,899:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x0000012BA49BA440>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['temperature', 'pressure',
+                                             'vibration'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', contamination=0.05, n_jobs=-1, random_state=123))]), ml_usecase=None)
+2026-02-05 11:28:37,899:INFO:Set up data.
+2026-02-05 11:28:37,910:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 11:28:37,927:WARNING:C:\Users\Rhiswana\pycaret-env\lib\site-packages\sklearn\base.py:486: UserWarning: X has feature names, but IsolationForest was fitted without feature names
+  warnings.warn(
+
+2026-02-05 11:28:38,125:INFO:Initializing load_model()
+2026-02-05 11:28:38,127:INFO:load_model(model_name=factory_anomaly_model, platform=None, authentication=None, verbose=True)
